@@ -1,0 +1,94 @@
+
+* { /*modifica toda a pagina*/
+    margin: 0; /* serve para modificar a margem espaço lateral*/
+    padding: 0; /*serve para ajustar a altura es*/
+    box-sizing: border-box; /**/ 
+    font-family: "Poppins", sans-serif; /*fonte do google*/
+}
+
+body { /*mudar todo o corpo*/
+    padding-top: 20px; /*espassameto em cima*/
+    padding-right: 100px; /* espassameto a direita*/
+    padding-left: 100px; /*espassameto esquerda*/
+}
+
+.conteudo {
+    width: 100%; /* LARGURA */
+    display: flex; /*coloca o item um do lado do outro*/
+    justify-content: space-between; /*como vou alinhar o conteudo, space serve  para dar um espaço entre os itens*/
+    align-items: center; /*alinha os itens no centro*/
+}
+
+.textos {
+    width: 600px;
+}
+
+h2 {
+    color: #333; /* Cor do texto */
+    font-size: 60px; /* Tamanho do texto */
+    font-weight: bold; /* Grossura do texto*/
+}
+
+span { /*serve para selecionar uma parte do texto*/
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background: #017143;/* background -> fundo do elemento */
+    color: white;/* cor do texto */
+    border-radius: 40px;/* arredondamento da borda */
+    border: none;/* tira a borda do elemento */
+    cursor: pointer;/* cursor do mouse maozinha*/
+    padding: 10px; /* espaçamento interno */
+    margin-top: 20px;/* Cria uma margem  */
+    transition: 0.5s;
+}
+
+button:hover{ /*efeito de mudar a cor do botao*/
+    background-color: #018950;
+}
+
+.imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;/*center deixa no cetro*/
+    transform: translateY(-25px); /*serve para fazer o item se mexer*/
+    transition: 1s; /*serve para atrasar ou acelerar a trasiçao*/
+}
+
+.botao-menu {
+    width: 60px;
+    cursor: pointer;
+    
+}
+
+.circulo {
+    background: #017143;
+    height: 100%; /* Altura */
+    width: 100%; /* Largura */
+    position: absolute;/**/
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);/*serve para fazer um corte de um circulo*/
+    z-index: -1;/*serve para deixar atras do texto ou imagem*/
+}
+
+.logo {
+    width: 80px;
+}
+
+.imagem-copo {
+    width: 340px;
+}
